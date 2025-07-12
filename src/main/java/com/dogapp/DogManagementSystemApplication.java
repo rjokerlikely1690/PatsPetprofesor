@@ -2,6 +2,7 @@ package com.dogapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -25,6 +26,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @since 2024
  */
 @SpringBootApplication
+@ComponentScan(basePackages = "com.dogapp")
 @EnableJpaRepositories(basePackages = "com.dogapp.repository")
 @EnableTransactionManagement
 public class DogManagementSystemApplication {
@@ -40,11 +42,11 @@ public class DogManagementSystemApplication {
         System.out.println("==============================================");
         System.out.println("🐕 Dog Management System iniciado exitosamente");
         System.out.println("==============================================");
-        System.out.println("📱 Aplicación: http://localhost:8080/api");
-        System.out.println("📊 H2 Console: http://localhost:8080/api/h2-console");
-        System.out.println("📚 Swagger UI: http://localhost:8080/api/swagger-ui.html");
-        System.out.println("🔍 API Docs: http://localhost:8080/api/api-docs");
-        System.out.println("❤️  Health Check: http://localhost:8080/api/actuator/health");
+        System.out.println("📱 Aplicación: http://localhost:8080/api/dogs");
+        System.out.println("📊 H2 Console: http://localhost:8080/h2-console");
+        System.out.println("📚 Swagger UI: http://localhost:8080/swagger-ui.html");
+        System.out.println("🔍 API Docs: http://localhost:8080/v3/api-docs");
+        System.out.println("❤️  Health Check: http://localhost:8080/actuator/health");
         System.out.println("==============================================");
     }
 } 

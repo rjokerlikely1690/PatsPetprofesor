@@ -58,9 +58,9 @@ mvn spring-boot:run
 
 5. **Acceder a la aplicación**
 - **Aplicación**: http://localhost:8080/api
-- **Swagger UI**: http://localhost:8080/api/swagger-ui.html
-- **H2 Console**: http://localhost:8080/api/h2-console
-- **Health Check**: http://localhost:8080/api/actuator/health
+- **Swagger UI**: http://localhost:8080/swagger-ui.html
+- **H2 Console**: http://localhost:8080/h2-console
+- **Health Check**: http://localhost:8080/actuator/health
 
 ### Configuración de Base de Datos H2
 - **URL**: `jdbc:h2:mem:dogdb`
@@ -288,8 +288,8 @@ mvn spring-boot:run
 
 ### OpenAPI/Swagger
 La documentación interactiva de la API está disponible en:
-- **Swagger UI**: http://localhost:8080/api/swagger-ui.html
-- **OpenAPI JSON**: http://localhost:8080/api/api-docs
+- **Swagger UI**: http://localhost:8080/swagger-ui.html
+- **OpenAPI JSON**: http://localhost:8080/v3/api-docs
 
 ### Consideraciones Éticas
 

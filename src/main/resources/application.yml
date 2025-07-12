@@ -36,8 +36,6 @@ spring:
 # Configuración del servidor
 server:
   port: 8080
-  servlet:
-    context-path: /api
 
 # Configuración de Actuator
 management:
@@ -52,11 +50,17 @@ management:
 # Configuración de OpenAPI/Swagger
 springdoc:
   api-docs:
-    path: /api-docs
+    path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
-    operations-sorter: method
-    tags-sorter: alpha
+    operationsSorter: method
+    tagsSorter: alpha
+    tryItOutEnabled: true
+    filter: true
+    displayRequestDuration: true
+  show-actuator: true
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
 
 # Configuración de logging
 logging:
