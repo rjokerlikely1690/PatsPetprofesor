@@ -308,23 +308,3 @@ Para contribuir al proyecto:
 4. Push al branch (`git push origin feature/nueva-funcionalidad`)
 5. Crear Pull Request
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT - ver el archivo LICENSE para más detalles.
-
-## 👥 Autor
-
-- **Tu Nombre** - Desarrollo completo del sistema
-- **Email**: tu.email@ejemplo.com
-- **GitHub**: @tu-usuario
-
-## 📞 Soporte
-
-Para soporte técnico o preguntas:
-- Email: soporte@dogmanagement.com
-- Issues: GitHub Issues
-- Documentación: [Wiki del proyecto]
-
----
-
-**Dog Management System** - Gestión inteligente de perros con tecnología moderna 🐕💻 
